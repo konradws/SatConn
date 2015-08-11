@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+.auto-style1 {
+	font-family: "Courier New", Courier, monospace;
+	color: #0000FF;
+}
+</style>
+</head>
+  <body>
+<p>This application draws the solution graph of Boolean formulas
+and relations (up to 6 variables), highlighted on an orthographic hypercube projection.</p>
+  <p>
+&bull; A formula can be entered in the first text-box (syntax see below); <br>
+&bull; A relation can be entered as list of vectors (separated by
+spaces or commas, e.g.<span class="auto-style1"> 000 001 1100</span>) in the second text-box, or as
+list of the vectors not in the relation in the third one.</p>
+  <p>
+&bull; When hitting the return key in any text-box, the solution graph is
+drawn,  the clone and co-clone are calculated (up to 4 variables), 
+important properties are displayed, and the
+other text-boxes are updated (the formula is shown in a simplified CNF). <br>
+&bull; Vectors can be added to or removed from the relation by
+clicking the vertices in the graph. <br>
+&bull; The window can be resized for a larger graph.<br>
+&bull; The graphics can be exported as SVG-file, which can be edited
+and converted to other formats with programs like Inkscape.</p>
+<p><span style="font-weight: bold;">Formula Syntax:</span><br>
+Variables can be any single digits or letters (excluding A and E);<br>upper- and lower case is distinguished.</p>
+  <p>As operator are recognized:<br>&bull;<span class="auto-style1"> &amp;&amp; </span>or<span class="auto-style1"> &amp; </span>for "and",<br>
+&bull;<span class="auto-style1"> ||</span>,<span class="auto-style1"> |</span>, or<span class="auto-style1"> / </span>for "or",<br>
+&bull;<span class="auto-style1"> ! </span>or<span class="auto-style1"> - </span>for "not",<br>
+&bull;<span class="auto-style1"> + </span>for "xor",<br>
+&bull;<span class="auto-style1"> = </span>for "equals",<br>
+&bull;<span class="auto-style1"> A </span>for "for all",<br>
+&bull;<span class="auto-style1"> E </span>for "exists".<br>
+  </p>
+<p>For example, &forall;x&exist;y (x&or;y&or;&not;z)&and;(&not;x&or;z) could be written as<span class="auto-style1"><br>AxEy
+(x|y|-z)&amp;(-x|z)</span>.<br>
+For CNF-formulas, a more compact notation can be used: the
+literals of clauses are concatenated, clauses are separated by a
+spaces, e.g., <br>
+(x&or;y&or;&not;z)&and;(&not;x&or;z) could be written as<span class="auto-style1"> xy-z -xz</span>.</p>
+</body></html>
