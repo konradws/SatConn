@@ -15,7 +15,7 @@ import static java.lang.System.*;
  */
 public class Sift {
 
-	// finds not safely tight relations that are nc-CPS (according to Lemma 3.1.11)
+	// enumerates the not safely tight relations that are quasi disconnecting
 	public static void main(String[] args) {
 		list(r -> (qcbj(r) || qcim(r) || qcip(r)) && !stight(r),
 						r -> {
