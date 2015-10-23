@@ -1,7 +1,7 @@
 # SatConn
 Research tools for connectivity-related problems of Boolean satisfiability
 
-This software was written as part of the research for my PhD thesis "Connectivity of Boolean Satisfiability" in theoretical computer science at the university of Hannover, Germany.
+This software was written as part of the research for my PhD thesis "Connectivity of Boolean Satisfiability" in theoretical computer science at the university of Hannover, Germany. See http://arxiv.org/abs/1510.06700.
 
 After downloading the complete repository, the folder can be opened resp. imported in Netbeans or Eclipse as a project. The most useful functions are declared public and equipped with Javadoc comments, where helpful. The main-functions provide usage examples and can be executed by running the respective file.
 
